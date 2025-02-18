@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="">
+
+  <title>Contato - Maxium Seguros </title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+<style>
+  .contact_section {
+  margin-top: 30px; /* Adiciona 30px de espaço entre o cabeçalho e o formulário */
+}
+
+   .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+            z-index: 1000; /* Garante que o botão está sobre outros elementos */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #20b955;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+</style>
+</head>
+
+<body class="sub_page">
+
+  <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid ">
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+               Matriz: (11) 5561-7980 / Filial:(19) 3238-7757
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : comercial@maxiumseguros.com.br
+              </span>
+            </a>
+            <a href="https://www.google.com/search?q=Alameda+dos+Maracatins%2C+1435+conjunto+409%2F410+-+Moema+%2F+S%C3%A3o+Paulo-SP+-+CEP%3A+04089-015&oq=Alameda+dos+Maracatins%2C+1435+conjunto+409%2F410+-+Moema+%2F+S%C3%A3o+Paulo-SP+-+CEP%3A+04089-015&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1MDdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Matriz
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Maxium Seguros
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                </li>
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>-->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+ <section class="contact_section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="heading_container">
+          <h2>
+            Nos envie o seu formulário de contato!
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="form_container contact-form">
+          <form id="contactForm" onsubmit="enviarWhatsApp(event)">
+            <div>
+              <input type="text" id="nome" placeholder="Seu Nome" required />
+            </div>
+            <div>
+              <input type="text" id="telefone" placeholder="Número de Telefone" required />
+            </div>
+            <div>
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div>
+              <input type="text" id="mensagem" class="message-box" placeholder="Mensagem" required />
+            </div>
+            <div class="btn_box">
+              <button type="submit">
+                ENVIAR WHATSAPP
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6 px-0">
+  <div class="map_container">
+    <div class="map">
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7774771040254!2d-46.66797602466821!3d-23.612312178764746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0c0cf418e5%3A0xdcf43e5d2daa9101!2sAlameda%20dos%20Maracatins%2C%201435%20-%20409%20410%20-%20Indian%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004089-015!5e0!3m2!1spt-BR!2sbr!4v1739908518268!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Endereços
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/search?q=Alameda+dos+Maracatins%2C+1435+conjunto+409%2F410+-+Moema+%2F+S%C3%A3o+Paulo-SP+-+CEP%3A+04089-015&oq=Alameda+dos+Maracatins%2C+1435+conjunto+409%2F410+-+Moema+%2F+S%C3%A3o+Paulo-SP+-+CEP%3A+04089-015&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1MDdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Nossa Matriz
+                </span>
+              </a>
+               <a href="https://www.google.com/search?q=R.+Guilherme+Mamprim%2C+1453+-+SALA+3+-+Jardim+PinheirosValinhos+-+SP%2C+13274-450&oq=R.+Guilherme+Mamprim%2C+1453+-+SALA+3+-+Jardim+PinheirosValinhos+-+SP%2C+13274-450&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEwMzRqMGo5qAIIsAIB&sourceid=chrome&ie=UTF-8">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Nossa Filial
+                </span>
+              </a>
+
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Matriz (11) 5561-798
+                </span>
+              </a>
+               <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Filial (19) 3238-7757
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  comercial@maxiumseguros.com.br
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://pt-br.facebook.com/MaxiumSeguros/">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <!--<a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>-->
+            <a href="https://www.linkedin.com/company/maxium-corretora-de-seguros">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/maxiumseguros/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Informações Úteis
+            </h4>
+            <p>
+              Entre em contato conosco pelos nossos canais oficiais, e teremos o prazer de atendê-lo da melhor forma possível. Estamos à disposição para ajudá-lo! 😊
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links Úteis
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="index.html" alt="">
+                Inicio
+              </a>
+              <a class="" href="about.html">
+                <img src="about.html" alt="">
+                Sobre Nós
+              </a>
+              <a class="" href="service.html">
+                <img src="service.html" alt="">
+                Seguros
+              </a>
+              <a class="" href="contact.html">
+                <img src="contact.html" alt="">
+                Contato
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--<div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+   <a href="https://wa.me/11934004934" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Todos os Direitos Reservados
+        <a href="https://www.maxiumseguros.com.br">Maxium Seguros.</a>
+      </p>
+
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+ <script>
+  function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    var nome = document.getElementById('nome').value;
+    var telefone = document.getElementById('telefone').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    var textoMensagem = `*Novo Contato*%0A%0A*Nome:* ${nome}%0A*Telefone:* ${telefone}%0A*Email:* ${email}%0A*Mensagem:* ${mensagem}`;
+    
+    var linkWhatsApp = `https://wa.me/11934004934?text=${textoMensagem}`; // Substitua 55XXXXXXXXXXX pelo número de WhatsApp da sua empresa
+
+    window.open(linkWhatsApp, '_blank');
+  }
+</script>
+
+</body>
+</html>
