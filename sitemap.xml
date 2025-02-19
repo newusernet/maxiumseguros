@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página inicial -->
+    <url>
+        <loc>https://www.maxiumseguros.com.br/</loc>
+        <lastmod>2025-02-19</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Página Sobre Nós -->
+    <url>
+        <loc>https://www.maxiumseguros.com.br/about.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Página de Serviços -->
+    <url>
+        <loc>https://www.maxiumseguros.com.br/service.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Página de Contato -->
+    <url>
+        <loc>https://www.maxiumseguros.com.br/contact.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+   
+
+   
+</urlset>
